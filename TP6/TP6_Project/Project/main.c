@@ -179,8 +179,8 @@ void motor_set_position_test(float position_r, float position_l, int16_t speed_r
 		d_center = (right_motor_get_pos() + left_motor_get_pos())/2;
 		theta = (right_motor_get_pos() - left_motor_get_pos())/WHEEL_DISTANCE;
 
-		x = d_center*cos(theta);
-		y = d_center*sin(theta);
+		x = x+ d_center*cos(theta);
+		y = y + d_center*sin(theta);
 
 		chprintf((BaseSequentialStream *)&SD3, "x =%-7d y =%-7d theta =%-7d \r\n\n",
 							step_to_cm_test(x),step_to_cm_test(y), theta);
