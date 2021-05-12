@@ -1119,7 +1119,7 @@ void find_color_rainy_day(void){
 				image_context.count_red, image_context.count_green, image_context.count_blue);
 	}
 
-	if ((image_context.max_red < 29) && (image_context.max_green < 29) && (image_context.max_blue < 29)){
+	if ((image_context.max_red < 30) && (image_context.max_green < 30) && (image_context.max_blue < 30)){
 #ifndef TUNE
 		image_context.color_index = NO_COLOR;
 #endif
