@@ -107,12 +107,14 @@ int main(void)
 	//give sime time to find the color if there is one
 	//chThdSleepMilliseconds(1000);
 
-	mic_start(NULL);
-	playMelodyStart();
+
 
 	//moving_start();
 
 #endif
+
+	mic_start(NULL);
+	playMelodyStart();
 
 	while (1) {
 //		//waits 1 second
@@ -125,7 +127,7 @@ int main(void)
 //		chprintf((BaseSequentialStream *)&SD3, "TOP =%-7d BOT =%-7d DIFF =%-7d COLOR =%-7d Mode =%-7d \r\n\n",
 //					get_middle_top(), get_middle_bot(), get_middle_diff(),get_color(),get_rolling_mode());
 
-		playMelody(WE_ARE_THE_CHAMPIONS, ML_SIMPLE_PLAY, NULL);
+		playMelody(WALKING, ML_SIMPLE_PLAY, NULL);
 
 	}
 }
